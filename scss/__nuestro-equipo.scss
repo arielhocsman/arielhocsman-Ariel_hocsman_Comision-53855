@@ -1,0 +1,213 @@
+/* NUESTRO EQUIPO*/
+.body-nuestro-equipo{
+    background: linear-gradient($azul_muy_oscuro,$rojo_oscuro,$azul_claro,$violeta_medio_oscuro);
+} 
+
+.h1_nuestro_equipo{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 900;
+    color: white;
+}
+.galeria-skaters {
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    justify-content: space-around;
+align-items: center;
+padding-left: 350px;
+padding-right: 250px;
+}
+
+    .contenedor-galeria-skaters{
+    border: 4px solid $violeta_claro;
+    border-radius: 10%;
+    background-color: gray;
+    height: 330px;
+    margin: 50px 60px 50px 60px;
+
+    }
+
+        .contenedor-imagenes-skaters{
+            text-align: center;
+        }
+
+             .img-nuestro-equipo{
+             width: 180px;
+             height: 180px;
+             border-radius: 50%;
+             margin: 20px;
+             border: solid white 2px;
+             }
+
+
+.texto-galeria-skaters {
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+
+.contenedor-insta-galeria{
+    display: flex;
+justify-content:center;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+
+.usuario-instagram{
+    color: whitesmoke;
+    margin:0px 6px 0px 6px;
+}
+
+
+/* ............. */
+
+
+
+@mixin 	sm() {
+    @media only screen and (min-width: 576px) and (max-width:768px) {
+
+        .texto-galeria-skaters{
+            font-size: 1.1rem;
+        }
+
+        .contenedor-insta-galeria{
+            padding: 0;
+        }
+
+        div.galeria-skaters{
+            padding: 0 !important;
+        }
+
+        .h1_nuestro_equipo{
+            text-align: center;
+            font-weight: 900;
+            color: white;
+        }
+
+        .contenedor-galeria-skaters {
+            border: 1px solid black;
+            border-radius: 10%;
+            background-color: gray;
+            height: 350px;
+            margin: 50px 30px 50px 30px;
+        }
+
+
+  
+  
+
+  
+    }
+  }
+
+
+
+  @mixin md() {
+    @media only screen and (min-width: 768px) and (max-width:992px) {
+
+        .texto-galeria-skaters{
+            font-size: 1.1rem;
+        }
+
+        .contenedor-insta-galeria{
+            padding: 0;
+        }
+
+        div.galeria-skaters{
+            padding: 0 !important;
+        }
+
+        .contenedor-galeria-skaters {
+            border: 1px solid black;
+            border-radius: 10%;
+            background-color: gray;
+            height: 340px;
+            margin: 50px 30px 50px 30px;
+        }
+
+
+  
+  
+
+  
+    }
+  }
+
+
+
+  @mixin lg() {
+    @media only screen and (min-width: 992px) and (max-width:1200px) {
+
+        .texto-galeria-skaters{
+            font-size: 1.1rem;
+        }
+
+        .contenedor-insta-galeria{
+            padding: 0;
+        }
+
+        div.galeria-skaters{
+            padding: 0 !important;
+        }
+
+        .contenedor-galeria-skaters {
+            border: 1px solid black;
+            border-radius: 10%;
+            background-color: gray;
+            height: 340px;
+            margin: 50px 30px 50px 30px;
+        }
+
+  
+    }
+  }
+
+
+
+  @mixin lg() {
+    @media only screen and (min-width: 1200px) and (max-width:1700px) {
+
+        .texto-galeria-skaters{
+            font-size: 1.1rem;
+        }
+
+        .contenedor-insta-galeria{
+            padding: 0;
+        }
+
+        div.galeria-skaters{
+            padding: 0 !important;
+        }
+
+        .contenedor-galeria-skaters {
+            border: 1px solid black;
+            border-radius: 10%;
+            background-color: gray;
+            height: 340px;
+            margin: 50px 30px 50px 30px;
+        }
+
+  
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  @include sm();
+  @include md();
+  @include lg();
+  @include xl();
+  

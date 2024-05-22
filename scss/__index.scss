@@ -1,0 +1,1003 @@
+.index-body{
+  background: linear-gradient($azul_oscuro, $violeta_oscuro, $azul_claro);
+}
+
+header .menu .logo{
+    width: 8rem;
+  }
+  .menu li button{
+    padding: 5px;
+  }
+  header .menu li a {
+    padding: 20px;
+    font-size: 1rem;
+  }
+
+
+
+
+  /* seccion Hero */
+.section-hero{
+background-color: $color_negro;
+margin-top: 30px;
+margin-bottom: 30px;
+padding: 40px 30px 40px 30px;
+
+
+.titular-hero {
+ justify-content: center;
+ align-items: center;
+ color:whitesmoke;
+ display:grid;
+ grid-template-columns: 1fr 1fr;
+ grid-template-rows: 1fr ;
+ grid-template-areas: 
+ "primera segunda" 
+ "tercera cuarta" ;
+ }
+
+
+div.contenedor-titular-hero{ 
+text-align:center;
+padding: 0px 90px 0px 90px;
+width: 100%;
+height: 100%;
+
+}
+
+
+div.contenedor-titular-hero h1{
+  align-content: center;
+  width: 100%;
+height: 100%;
+  padding: 27px;
+font-size: 3.5rem;
+font-family:'open sans', sans-serif;
+font-weight:800;
+line-height: 5rem;
+color: white;
+background-image: url('../imagenes/img-poco-brillo.jpg');
+background-size: 100%; /* Ajusta el tamaño de la imagen */
+background-position: center; /* Centra la imagen */
+background-repeat: no-repeat;
+
+}
+
+.container-article-hero{
+ width: 50vw;
+ text-align: center;
+ margin-top: 20px;
+ padding: 0px 190px 0px 190px;
+ align-self: flex-start;
+
+    .article-hero {
+      font-family: Arial, Helvetica, sans-serif;
+     font-size: 0.8rem;
+     line-height: 2.1rem;
+     margin: 0;
+
+    }
+
+    button.boton-hero{
+      background-color: $azul_muy_oscuro;
+    }
+
+    .boton-hero {
+        width: auto;
+        height: auto;
+        font-size: 0.9rem;
+        font-weight:bold;
+        margin-left: 10px;
+        padding: 7px;
+        background-color: $rojo_oscuro;
+        color:white;
+        border-radius: 25%;
+    }
+}
+
+div.div-video-hero {
+ text-align: center;
+ grid-area:segunda;
+
+    .video1 {
+     width: 90%;
+     height: 400px;
+    }
+}
+
+.galeria-de-imagenes-para-hero {
+ display:flex ;
+ align-self: flex-start;
+ flex-wrap: wrap;
+ justify-content: space-around;
+ grid-area: cuarta;
+ padding-right:  60px;
+
+    .imagenes-para-hero-tamaño {
+     width:11vw ;
+     margin-top: 30px;
+     margin-left: 20px;
+     border-radius: 50%;
+     border:solid white 1px;
+    }
+}     
+
+}
+/* ............. */
+
+/* Seccion de Nuestra-Propuesta*/
+
+
+
+.section-2 {
+margin-top: 30px;
+padding-top: 30px;
+padding-bottom: 30px;
+display: flex;
+flex-direction: row;
+justify-content:space-evenly;
+background-image: url('../imagenes/img-poco-brillo2.jpg');
+background-size: 100%; /* Ajusta el tamaño de la imagen */
+background-position: center; /* Centra la imagen */
+
+
+
+    .imagen-nuestra-propuesta {
+    width: 16vw;
+    height: 13vw;
+    border-radius: 50%;
+    }
+
+
+    .carta{
+        text-align: center;
+        width: 18.75rem;
+        
+    }
+
+    .texto-parrafo{
+        font-size: 0.9rem;
+    text-align: center;
+    color: white;
+    text-shadow: 12px 12px 15px 15px black;
+    margin-top:30px;
+   overflow: auto;
+   height:150px;
+   font-weight: 400;
+    }
+
+        .boton-imagen-carta {
+        background-color:$violeta_oscuro;
+        color: white;
+        border-radius: 20%;
+        margin-top: 5px;
+        padding: 5px;
+        } 
+        
+}
+
+
+/* ............. */
+
+/* SECCION imagen-masinfo*/
+.div-imagen-masinfo{
+margin-top: 30px;
+text-align: center;
+background-color:$color_negro;
+position: relative;
+
+
+
+.imagen-masinfo{
+width: 80.125rem;
+border: solid 1px white;
+}
+
+.titulo-mas-informacion {
+color: white;
+position: absolute;
+top: 35%;
+left:47%;
+}
+
+.titulo-mas-informacion h1{
+width: 16.875rem;
+font-size: 2.5rem;
+font-weight: 600;
+color: white;
+}
+
+.texto-mas-informacion p{
+
+font-weight: 400;
+color: white;
+position: absolute;
+top: 45%;
+left:50%;
+}
+
+.titulo-mas-informacion button{
+border-radius: 50%;
+padding: 7px;
+margin-top: 10px;
+width: 80px;
+background-color: $color_negro;
+color: white;
+}
+
+}
+
+
+/* ............. */
+/* SECCION Opiniones*/
+
+.testimonio-titulo{
+text-align: center;
+color: whitesmoke;
+font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+font-weight: 800;
+font-size: 2rem;
+padding-top: 20px;
+padding-bottom: 30px;
+}
+
+.opiniones_contenedor {
+  background-image: url(../imagenes/fondo\ opiniones.jpg);
+  background-size: 100%; /* Ajusta el tamaño de la imagen */
+background-position: center; /* Centra la imagen */
+background-repeat: no-repeat;
+
+padding:20px 50px 20px 50px;
+justify-items: center;
+align-items: center;
+display: grid;
+grid-template-areas:
+"testimonio1 testimonio2 testimonio3"
+"testimonio4 testimonio5 testimonio6";
+grid-template-rows: 1fr 1fr ;
+grid-template-columns: 1fr 1fr 1fr;
+column-gap: 10px;
+row-gap: 40px;
+
+
+div.testimonio{
+width: 15rem;
+height: 21rem;
+border: solid 1px white;
+border-radius: 35%;
+background-color:$verde_oscuro;
+text-align: center;
+padding: 30px;
+
+
+
+.img-testimonio{
+    width: 5vw;
+    height: 5vw;
+    border-radius: 100%;
+    border: solid whitesmoke 1px;
+    margin-bottom: 20px;
+    }
+
+.parrafo-opinion{
+font-size: 0.9rem;
+}
+    .nombre-testimonio{
+        font-style: italic;
+        font-size: 0.9rem;
+        color: whitesmoke;
+        }
+}
+
+
+}
+
+/* ............. */
+
+
+@mixin 	sm() {
+  @media only screen and (min-width: 576px) and (max-width:768px) { 
+
+
+    header .menu li {
+      padding: 10px;
+      display: inline;
+      list-style-type: none;
+    }
+
+    header .menu .logo {
+      width: 5.5rem;
+    }
+
+    .section-hero .titular-hero {
+      justify-content: center;
+      align-items: center;
+      color: whitesmoke;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas:
+      "primera segunda"
+      "tercera cuarta";
+    }
+
+    .section-hero div.contenedor-titular-hero{
+      padding: 0;
+    }
+
+
+    .section-hero div.contenedor-titular-hero h1{
+      text-align: center;
+      width: 100%;
+      font-size: 1.8rem;
+      font-weight: 900;
+      line-height: 2.5rem;
+    }
+
+
+    div.contenedor-titular-hero h1{
+      align-content:center;
+      width: 100%;
+      height: 100%;
+      font-size: 4.9rem;
+      font-family:'open sans', sans-serif;
+      font-weight:600;
+      line-height: 8rem;
+      color: white;
+      background-image: url('../imagenes/img-poco-brillo.jpg');
+      background-size: 100%; /* Ajusta el tamaño de la imagen */
+      background-position: center; /* Centra la imagen */
+      background-repeat: no-repeat;
+    }
+
+    .section-hero .container-article-hero {
+      width: 50vw;
+      text-align: center;
+      margin-top: 20px;
+      padding: 0px 20px 0px 20px;
+      align-self: flex-start;
+    }
+
+    .section-hero .container-article-hero .article-hero{
+      font-size: 0.6rem;
+      line-height: 1.2rem;
+    }
+
+    .section-hero div.div-video-hero {
+      width: 100%;
+
+     }
+
+     //nuestra propuesta//
+
+
+     .section-2 .imagen-nuestra-propuesta{
+      margin-top: 20px;
+     }
+
+     .section-2 .texto-parrafo{
+      font-size: 0.8rem;
+      padding: 0px 30px 0px 30px;
+     }
+    //...//
+
+    //img-envios-gratis//
+
+     .div-imagen-masinfo .imagen-masinfo{
+      padding: 30px;
+      width: 100%;
+    }
+
+    .div-imagen-masinfo .titulo-mas-informacion h1{
+      font-size: 1.8rem;
+    }
+
+    .div-imagen-masinfo .titulo-mas-informacion button{
+     font-size: 0.8rem;
+    }
+
+     //...//
+
+    //opiniones del clientes//
+
+
+    .opiniones_contenedor {
+      padding: 0px 50px 0px 50px;
+      justify-items: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      grid-template-areas:
+      "testimonio1 testimonio2 testimonio3"
+      "testimonio4 testimonio5 testimonio6";
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 10px;
+      row-gap: 40px;
+      background-image: none;
+
+    }
+
+
+    .opiniones_contenedor div.testimonio .img-testimonio{
+      width: 38%;
+      height: 25%;
+    }
+
+
+    .opiniones_contenedor div.testimonio {
+      width: 15rem;
+      height: 21rem;
+      border: solid 1px white;
+      border-radius: 35%;
+      background-color: #98a49f;
+      text-align: center;
+      padding: 30px;
+    }
+
+
+  
+  }
+}
+
+
+
+/* ............. */
+
+
+
+@mixin 	md() {
+  @media only screen and (min-width: 768px) and (max-width:992px) { 
+    header .menu .logo {
+      width: 6.5rem;
+    }
+
+
+
+    .section-hero .titular-hero {
+      justify-content: center;
+      align-items: center;
+      color: whitesmoke;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas:
+      "primera segunda"
+      "tercera cuarta";
+    }
+
+    .section-hero div.contenedor-titular-hero{
+      padding: 0;
+    }
+
+
+    .section-hero div.contenedor-titular-hero h1{
+      text-align: center;
+      width: 100%;
+      font-size: 2.3rem;
+      font-weight: 800;
+      line-height: 3.5rem;
+    }
+
+
+    div.contenedor-titular-hero h1{
+      align-content:center;
+      width: 100%;
+      height: 100%;
+      font-size: 4.9rem;
+      font-family:'open sans', sans-serif;
+      font-weight:600;
+      line-height: 8rem;
+      color: white;
+      background-image: url('../imagenes/img-poco-brillo.jpg');
+      background-size: 100%; /* Ajusta el tamaño de la imagen */
+      background-position: center; /* Centra la imagen */
+      background-repeat: no-repeat;
+    }
+
+    .section-hero .container-article-hero {
+      width: 50vw;
+      text-align: center;
+      margin-top: 20px;
+      padding: 0px 20px 0px 20px;
+      align-self: flex-start;
+    }
+
+    .section-hero .container-article-hero .article-hero{
+      font-size: 0.7rem;
+      line-height: 1.2rem;
+    }
+
+    .section-hero div.div-video-hero {
+      width: 100%;
+
+     }
+
+     //nuestra propuesta//
+
+
+     .section-2 .imagen-nuestra-propuesta{
+      margin-top: 20px;
+     }
+
+     .section-2 .texto-parrafo{
+      font-size: 0.8rem;
+      padding: 0px 30px 0px 30px;
+     }
+    //...//
+
+    //img-envios-gratis//
+
+     .div-imagen-masinfo .imagen-masinfo{
+      padding: 40px;
+      width: 100%;
+    }
+
+    .div-imagen-masinfo .titulo-mas-informacion h1{
+      font-size: 1.8rem;
+    }
+
+    .div-imagen-masinfo .titulo-mas-informacion button{
+     font-size: 0.8rem;
+    }
+
+     //...//
+
+    //opiniones del clientes//
+
+
+    .opiniones_contenedor {
+      padding: 0px 50px 0px 50px;
+      justify-items: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      grid-template-areas:
+      "testimonio1 testimonio2 testimonio3"
+      "testimonio4 testimonio5 testimonio6";
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 10px;
+      row-gap: 40px;
+      background-image: none;
+
+    }
+
+
+    .opiniones_contenedor div.testimonio .img-testimonio{
+      width: 38%;
+      height: 25%;
+    }
+
+
+    .opiniones_contenedor div.testimonio {
+      width: 15rem;
+      height: 21rem;
+      border: solid 1px white;
+      border-radius: 35%;
+      background-color: #98a49f;
+      text-align: center;
+      padding: 30px;
+    }
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+  
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//..//
+
+
+
+
+@mixin 	lg() {
+  @media only screen and (min-width: 992px) and (max-width:1200px) { 
+    header .menu .logo {
+      width: 8.2rem;
+    }
+
+
+    .section-hero div.contenedor-titular-hero{
+      padding: 0;
+    }
+
+
+    .section-hero div.contenedor-titular-hero h1{
+      text-align: center;
+      width: 100%;
+      font-size: 2.9rem;
+      font-weight: 800;
+      line-height: 4.1rem;
+    }
+
+
+    div.contenedor-titular-hero h1{
+      align-content:center;
+      width: 100%;
+      height: 100%;
+      font-size: 4.9rem;
+      font-family:'open sans', sans-serif;
+      font-weight:600;
+      line-height: 8rem;
+      color: white;
+      background-image: url('../imagenes/img-poco-brillo.jpg');
+      background-size: 100%; /* Ajusta el tamaño de la imagen */
+      background-position: center; /* Centra la imagen */
+      background-repeat: no-repeat;
+    }
+
+    .section-hero .container-article-hero {
+      width: 50vw;
+      text-align: center;
+      margin-top: 20px;
+      padding: 0px 20px 0px 20px;
+      align-self: flex-start;
+    }
+
+    .section-hero .container-article-hero .article-hero{
+      font-size: 0.9rem;
+      line-height: 1.9rem;
+    }
+
+    .section-hero div.div-video-hero {
+      width: 100%;
+
+     }
+
+     //nuestra propuesta//
+
+
+     .section-2 .imagen-nuestra-propuesta{
+      margin-top: 20px;
+     }
+
+     .section-2 .texto-parrafo{
+      font-size: 0.8rem;
+      padding: 0px 40px 0px 40px;
+     }
+    //...//
+
+    //img-envios-gratis//
+
+     .div-imagen-masinfo .imagen-masinfo{
+      padding: 40px;
+      width: 100%;
+    }
+
+    .div-imagen-masinfo .titulo-mas-informacion h1{
+      font-size: 1.8rem;
+    }
+
+    .div-imagen-masinfo .titulo-mas-informacion button{
+     font-size: 0.8rem;
+    }
+
+     //...//
+
+    //opiniones del clientes//
+
+
+    .opiniones_contenedor {
+      padding: 30px 50px 30px 50px;
+      justify-items: center;
+      align-items: center;
+      display: grid;
+      flex-direction: row;
+      grid-template-areas:
+      "testimonio1 testimonio2 testimonio3"
+      "testimonio4 testimonio5 testimonio6";
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 10px;
+      row-gap: 40px;
+      background-image: url(../imagenes/fondo\ opiniones.jpg);
+      background-size: 100%; /* Ajusta el tamaño de la imagen */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat;
+
+    }
+
+
+    .opiniones_contenedor div.testimonio .img-testimonio{
+      width: 38%;
+      height: 25%;
+    }
+
+
+    .opiniones_contenedor div.testimonio {
+      width: 15rem;
+      height: 21rem;
+      border: solid 1px white;
+      border-radius: 35%;
+      background-color: #98a49f;
+      text-align: center;
+      padding: 30px;
+    }
+
+
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@mixin 	xl() {
+  @media only screen and (min-width: 1200px) and (max-width:1400px) {
+
+
+    header .menu li a {
+      padding: 15px;
+      font-size: 1rem;
+     }
+
+
+    .section-hero div.contenedor-titular-hero{
+      padding: 0;
+    }
+
+
+    .section-hero div.contenedor-titular-hero h1{
+      text-align: center;
+      width: 100%;
+      font-size: 4.3rem;
+      font-weight: 700;
+      line-height: 4.7rem;
+    }
+
+
+    div.contenedor-titular-hero h1{
+      align-content:center;
+      width: 100%;
+      height: 100%;
+      font-family:'open sans', sans-serif;
+      font-weight:600;
+      line-height: 8rem;
+      color: white;
+      background-image: url('../imagenes/img-poco-brillo.jpg');
+      background-size: 100%; /* Ajusta el tamaño de la imagen */
+      background-position: center; /* Centra la imagen */
+      background-repeat: no-repeat;
+    }
+
+    .section-hero .container-article-hero {
+      width: 50vw;
+      text-align: center;
+      margin-top: 20px;
+      padding: 0px 20px 0px 20px;
+      align-self: flex-start;
+    }
+
+    .section-hero .container-article-hero .article-hero{
+      font-size: 0.9rem;
+      line-height: 2rem;
+    }
+
+    .section-hero div.div-video-hero {
+      width: 100%;
+
+     }
+
+     //nuestra propuesta//
+
+
+     .section-2 .imagen-nuestra-propuesta{
+      margin-top: 20px;
+     }
+
+     .section-2 .texto-parrafo{
+      font-size: 0.8rem;
+      padding: 0px 40px 0px 40px;
+     }
+    //...//
+
+    //img-envios-gratis//
+
+     .div-imagen-masinfo .imagen-masinfo{
+      padding: 40px;
+      width: 100%;
+    }
+
+    .div-imagen-masinfo .titulo-mas-informacion h1{
+      font-size: 1.8rem;
+    }
+
+    .div-imagen-masinfo .titulo-mas-informacion button{
+     font-size: 0.8rem;
+    }
+
+     //...//
+
+    //opiniones del clientes//
+
+
+    .opiniones_contenedor {
+      padding: 30px 50px 30px 50px;
+      justify-items: center;
+      align-items: center;
+      display: grid;
+      flex-direction: row;
+      grid-template-areas:
+      "testimonio1 testimonio2 testimonio3"
+      "testimonio4 testimonio5 testimonio6";
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 10px;
+      row-gap: 40px;
+
+    }
+
+
+    div.testimonio p{
+      font-size: 0.9rem;
+      margin-bottom: 30px;
+    }
+
+
+    .opiniones_contenedor div.testimonio .img-testimonio{
+      width: 33%;
+      height: 25%;
+    }
+
+
+    .opiniones_contenedor div.testimonio {
+      width: 15rem;
+      height: 19rem;
+      border: solid 1px white;
+      border-radius: 35%;
+      background-color: #98a49f;
+      text-align: center;
+      padding: 30px;
+    }
+
+
+
+
+
+
+
+  }
+}
+
+
+
+
+@mixin 	xxl() {
+  @media only screen and (min-width: 1400px) and (max-width:1800px) {
+
+
+    
+    //opiniones del clientes//
+
+
+    .opiniones_contenedor {
+      padding: 30px 50px 30px 50px;
+      justify-items: center;
+      align-items: center;
+      display: grid;
+      flex-direction: row;
+      grid-template-areas:
+      "testimonio1 testimonio2 testimonio3"
+      "testimonio4 testimonio5 testimonio6";
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 10px;
+      row-gap: 40px;
+
+    }
+
+
+    div.testimonio p{
+      font-size: 0.9rem;
+      margin-bottom: 15px;
+    }
+
+
+    .opiniones_contenedor div.testimonio .img-testimonio{
+      width: 30%;
+      height: 25%;
+    }
+
+
+    .opiniones_contenedor div.testimonio {
+      width: 15rem;
+      height: 17rem;
+      border: solid 1px white;
+      border-radius: 35%;
+      background-color: #98a49f;
+      text-align: center;
+      padding: 30px;
+    }
+
+
+
+
+
+
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@include sm();
+@include md();
+@include lg();
+@include xl();
+@include xxl();
+
+
+

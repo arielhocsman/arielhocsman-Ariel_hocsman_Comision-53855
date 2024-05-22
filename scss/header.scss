@@ -1,0 +1,466 @@
+/* seccion de navegacion */
+
+.enlace-icono-whatsapp{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 20;
+    position: fixed;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+header {
+    margin: 10px 0px 10px 0px;
+    font-family: "Open Sans", sans-serif;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+
+
+
+        
+        button {
+         font-weight: bold;
+         border-radius: 10px;
+         box-shadow: 3px 3px 3px  #00000064 ;
+         color: white;
+         
+         button:hover {
+            color: rgba(0, 0, 255, 0.825);
+            }
+        }
+
+        header .menu{
+        margin-bottom: 0;
+        width: 100%;
+        height: 6vw;
+
+        .logo {
+            width:6.875rem;
+            display: inline;
+         }
+    }
+
+        .menu li {
+        padding: 10px;
+         display: inline;
+         list-style-type: none;
+        }        
+    
+            .menu li a { 
+                font-size: 1rem;
+             padding: 40px 20px 40px 20px;
+             text-decoration: none; 
+            }
+
+}
+
+
+/* ............. */
+
+
+
+
+@mixin 	sm() {
+    @media only screen and (min-width: 576px) and (max-width:768px) { 
+
+
+
+        header {
+            margin: 10px 0px 10px 0px;
+            font-family: "Open Sans", sans-serif;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+
+
+            header.div.container{
+                margin: 0;
+            }
+
+                
+                button {
+                    width: 90px;
+                    margin-left: 10px;
+                 font-weight: bold;
+                 border-radius: 10px;
+                 box-shadow: 3px 3px 3px  #00000064 ;
+                 
+                 button:hover {
+                    color: rgba(0, 0, 255, 0.825);
+                    }
+                }
+
+
+                .boton_quienes_somos{
+                    display: none !important; 
+                }
+
+        
+                header .menu{
+                margin-bottom: 0;
+                width: 100%;
+                height: 6vw;
+            }
+        
+                .menu li {
+                 display: inline;
+                 list-style-type: none;
+                }        
+            
+                    .menu li a { 
+                        font-size: 0.8rem !important;
+                     padding: 10px 0px 10px 0px !important;
+                     text-decoration: none; 
+                    }
+
+                    .logo{
+                        display: none;
+                    }
+        
+        }
+
+
+
+    }
+}
+
+
+
+
+
+
+
+@mixin 	md() {
+    @media only screen and (min-width: 768px) and (max-width:992px) { 
+
+        header {
+            margin: 10px 0px 10px 0px;
+            font-family: "Open Sans", sans-serif;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+
+                
+                button {
+                    height: 60px;
+                    width: 120px;
+
+                 font-weight: bold;
+                 border-radius: 10px;
+                 box-shadow: 3px 3px 3px  #00000064 ;
+                 color: white;
+                 
+                 button:hover {
+                    color: rgba(0, 0, 255, 0.825);
+                    }
+                }
+
+        
+                header menu{
+                width: 100%;
+                height: 6vw;
+
+
+                .logo {
+                    width:6.875rem;
+                    display: inline;
+                 }
+            }
+        
+                
+
+
+                ul.menu li {
+                 display: inline;
+                 list-style-type: none;
+                 margin-left: 5px !important;
+                }        
+
+                .menu{
+                    padding: 0 !important;
+                }
+            
+                    .menu li a { 
+                        font-size: 1rem !important;
+                     padding: 10px 0px 10px 0px !important;
+                     text-decoration: none; 
+                    }
+
+                    .boton_quienes_somos{
+                        display: none !important; 
+                    }
+        
+        }
+
+
+
+
+
+
+
+
+
+
+
+         
+
+
+
+    }
+}
+
+
+
+
+
+
+
+
+
+@mixin 	lg() {
+    @media only screen and (min-width: 992px) and (max-width:1200px) { 
+
+        header {
+            margin: 10px 0px 10px 0px;
+            font-family: "Open Sans", sans-serif;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+
+                
+                button {
+                    width: 120px;
+
+                 font-weight: bold;
+                 border-radius: 10px;
+                 box-shadow: 3px 3px 3px  #00000064 ;
+                 color: white;
+                 
+                 button:hover {
+                    color: rgba(0, 0, 255, 0.825);
+                    }
+                }
+
+        
+                header menu{
+                width: 100%;
+                height: 6vw;
+
+
+        
+                .logo {
+                    width:6.875rem;
+                    display: inline;
+                 }
+            }
+        
+                
+
+
+                ul.menu li {
+                 display: inline;
+                 list-style-type: none;
+                 margin-left: 5px !important;
+                }        
+            
+                    .menu li a { 
+                        font-size: 1rem !important;
+                     padding: 10px 0px 10px 0px !important;
+                     text-decoration: none; 
+                    }
+        
+        }
+
+
+
+
+
+
+
+
+
+
+
+         
+
+
+
+    }
+}
+
+
+
+
+@mixin 	xl() {
+    @media only screen and (min-width: 1200px) and (max-width:1400px) { 
+
+        header {
+            margin: 10px 0px 10px 0px;
+            font-family: "Open Sans", sans-serif;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+
+                
+                button {
+                    width: 150px;
+
+                 font-weight: bold;
+                 border-radius: 10px;
+                 box-shadow: 3px 3px 3px  #00000064 ;
+                 color: white;
+                 
+                 button:hover {
+                    color: rgba(0, 0, 255, 0.825);
+                    }
+                }
+
+        
+                header menu{
+                width: 100%;
+                height: 6vw;
+
+
+        
+                .logo {
+                    width:6.875rem;
+                    display: inline;
+                 }
+            }
+        
+                
+
+
+                ul.menu li {
+                 display: inline;
+                 list-style-type: none;
+                 margin-left: 10px !important;
+                 padding-left: 0 !important;
+                }        
+            
+                    .menu li a { 
+                        font-size: 1rem !important;
+                     padding: 10px 0px 10px 0px !important;
+                     text-decoration: none; 
+                    }
+        
+        }
+
+
+
+
+
+
+
+
+
+
+
+         
+
+
+
+    }
+}
+
+
+
+
+
+@mixin 	xxl() {
+    @media only screen and (min-width: 1400px) and (max-width:2000px) { 
+
+        header {
+            margin: 10px 0px 10px 0px;
+            font-family: "Open Sans", sans-serif;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+
+                
+                button {
+                    width: 160px;
+                 font-weight: bold;
+                 border-radius: 10px;
+                 box-shadow: 3px 3px 3px  #00000064 ;
+                 color: white;
+                 button:hover {
+                    color: rgba(0, 0, 255, 0.825);
+                    }
+                }
+
+        
+                header menu{
+                width: 100%;
+                height: 6vw;
+
+
+    
+            }
+
+        
+                
+
+
+                ul.menu li {
+                 display: inline;
+                 list-style-type: none;
+                 margin-left: 30px !important;
+                }        
+            
+                    .menu li a { 
+                        font-size: 1rem !important;
+                     padding: 5px 10px 10px 5px !important;
+                     text-decoration: none; 
+                    }
+        
+        }
+
+
+
+
+
+
+
+
+
+
+
+         
+
+
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@include sm();
+@include md();
+@include lg();
+@include xl();
+@include xxl();

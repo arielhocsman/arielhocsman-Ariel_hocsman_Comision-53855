@@ -1,0 +1,210 @@
+/* Footer*/
+.ul-footer {
+    padding: 0px;
+    margin-bottom: 0;
+    background-color:$gris_medio_claro;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .footer-elements{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+        .contenedor-footer-logo{
+         text-align: center;
+
+            .footer-logo{
+             height: 5vw;
+            }
+        }
+        
+        .tarjetas-img{
+         height: 6vw;
+         }
+
+        .icono-support-container{
+         text-align: center;
+         
+            .icono-support{
+             padding: 10px;
+             width: 4vw;
+            }
+        }
+    
+        .camion-contenedor {
+         text-align: center;
+     
+            .camion { width: 4vw;}
+
+        }
+
+        .informacion-footer{
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+                 
+
+            .li-container-footer{
+            list-style-type: none;
+            margin-bottom: 3px;
+
+                .a-footer{
+                  
+                    font-weight: 200;
+                    text-decoration: none;
+                   color: black;
+                }
+
+               a:hover {color: white;}
+            }
+    
+        .candado-contenedor{
+             text-align: center;
+
+           .candado{
+            width: 3.2vw;
+           text-align: center;
+           }
+
+            div .candado-contenedor p{margin-top: 15px;}
+        }
+    
+        .tarjeta-de-credito-contenedor{
+            text-align: center;
+        
+            .tarjetas {
+            padding-top: 7px;
+            width: 3.5vw;
+            }
+        }
+                   
+            div .iconos-redes-sociales-footer{
+                padding-bottom: 150px;
+             height: 160px;
+             width: 160px;
+
+                .iconos-redes-sociales-footer {
+                 display: flex;    
+                 flex-direction: row;
+                 flex-wrap: wrap;   
+                }
+                    .icono-redes-sociales {
+                     height: 1.8vw;
+                     margin: 3px;
+                    }
+            }
+                    
+}    
+    /* ............. */
+
+
+
+@mixin 	sm() {
+    @media only screen and (min-width: 576px) and (max-width:768px) { 
+
+        .ul-footer p{
+            font-size: 0.7rem;
+            
+        }
+
+            .ul-footer .tarjetas-img{
+                display: none;
+            }
+
+            .ul-footer div .iconos-redes-sociales-footer{
+                display: none;
+            }
+
+            .ul-footer .li-container-footer .a-footer{
+                font-size: 0.8rem;
+             
+            }
+         
+
+
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@mixin 	md() {
+    @media only screen and (min-width: 768px) and (max-width:992px) { 
+
+        .ul-footer p{
+            font-size: 1rem;
+            
+        }
+
+            .ul-footer .tarjetas-img{
+                display: none;
+            }
+
+            .ul-footer div .iconos-redes-sociales-footer{
+                display: none;
+            }
+            
+            .ul-footer .li-container-footer .a-footer{
+                font-size: 0.9rem;
+             
+            }
+         
+
+
+
+    }
+}
+
+
+
+
+
+@mixin 	lg() {
+    @media only screen and (min-width: 992px) and (max-width:1200px) { 
+
+        .ul-footer p{
+            font-size: 1rem;
+            
+        }
+
+
+        .ul-footer div .iconos-redes-sociales-footer{
+            display: none;
+        }
+            
+            .ul-footer .li-container-footer .a-footer{
+                font-size: 0.9rem;
+             
+            }
+         
+
+
+
+    }
+}
+
+
+
+
+@include sm();
+@include md();
+@include lg();
+
+

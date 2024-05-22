@@ -1,0 +1,537 @@
+
+/* seccion-contacto*/
+.body-contacto {     background: linear-gradient($azul_claro,$azul_oscuro,$azul_claro,$azul_muy_oscuro,$violeta_medio_oscuro,$violeta_oscuro);
+
+    .container-imagen-y-formulario {
+     display: grid;
+     grid-template-columns: 1fr ;
+     grid-template-rows: 1fr;
+     grid-template-areas: " a b";
+    }
+
+     div.container-img {
+     width: 50vw;
+     height: 37vw;
+     grid-area: a;
+     background-color: black;
+  
+
+        .img-contacto {
+          width: 100%;
+         height: 100%;
+         border: solid red 1px;
+        }
+    }
+
+    .container-formulario {
+        border: solid red 1px;
+        grid-area: b;
+        width: 50vw;
+        height: 37vw;
+
+         .inputs{
+        padding: 5px;
+        width: 210px;
+          }
+
+       .input-email {
+         padding: 5px;
+         width: 210px;
+         }
+
+        .boton-enviar-formulario{
+         width: 60px;
+         border-radius: 35%;
+        }  
+    
+    }
+
+}
+/* ............. */
+
+/*Preguntas Frecuentes*/
+.preguntas-frecuentes{
+    color: white;
+    font-weight: 700;
+    text-align: center;  
+
+    .accordion-header{font-size: 10rem;}
+
+    .probamos {font-family: "Bungee Spice", sans-serif;}
+
+}
+/* BOOTSTRAP-CARROUSEL*/
+.carousel-inner {
+    background-image: url(./imagenes/fondo-carrousel.jpg);
+}
+
+.carousel-item{
+border: black solid 1px;
+}
+
+
+
+.contacto_info_final{
+    margin-bottom: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.box_contacto{
+    padding: 0px 120px 30px 120px;
+    text-align: center;
+}
+
+.box_contacto h3 {
+    margin-bottom: 30px;
+}
+.box_contacto p {
+    padding: 0px 50px 0px 50px;
+color: whitesmoke;
+font-weight: 300;
+}
+
+.contacto_info_final_icono{
+    margin-top: 40px;
+}
+
+
+
+
+@mixin sm() {
+    @media only screen and (min-width: 576px) and (max-width:768px) {
+
+
+
+        .body-contacto .container-imagen-y-formulario {
+            padding-bottom: 600px;
+            display: flex;
+            flex-direction: column;
+            justify-items: center; 
+            align-items: center; 
+           }
+
+           .body-contacto div.container-img{
+            background-color: inherit;
+           }
+
+           .body-contacto div.container-img .img-contacto{
+            border-color: $rojo_oscuro;
+            border-radius: 70%;
+
+           }
+
+
+           .body-contacto .container-formulario{
+            text-align: center;
+            border: none
+           }
+
+           .section-preguntas-frecuentes{
+            background-color: black;
+
+           }
+
+           .container_preguntas_frecuentes{
+            margin-top: 120px;
+            padding: 5px 0px 5px 0px;
+
+           }
+
+           .container_preguntas_frecuentes h1{
+
+            margin-top: 30px;
+            background-color:black;
+            
+           }
+
+           .contacto_info_final{
+            margin-bottom: 30px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+        
+        .box_contacto{
+            padding: 0px 20px 0px 20px;
+            text-align: center;
+        }
+        
+        .box_contacto h3 {
+            margin-bottom: 30px;
+        }
+        .box_contacto p {
+            padding: 0px 10px 0px 10px;
+        color: whitesmoke;
+        font-weight: 300;
+        }
+        
+        .contacto_info_final_icono{
+            margin-top: 40px;
+        }
+ 
+
+
+           
+
+
+
+    }
+}
+
+
+
+
+
+
+
+@mixin md() {
+    @media only screen and (min-width: 768px) and (max-width:992px) {
+
+
+
+        .body-contacto .container-imagen-y-formulario {
+            padding-bottom: 450px;
+            display: flex;
+            flex-direction: column;
+            justify-items: center; 
+            align-items: center; 
+           }
+
+           .body-contacto div.container-img{
+            background-color: inherit;
+           }
+
+           .body-contacto div.container-img .img-contacto{
+            border-color: $rojo_oscuro;
+            border-radius: 70%;
+
+           }
+
+
+           .body-contacto .container-formulario{
+            text-align: center;
+            border: none;
+            
+           }
+
+
+           .section-preguntas-frecuentes{
+            background-color: black;
+
+           }
+
+           .container_preguntas_frecuentes{
+            margin-top: 15px;
+            padding: 5px 0px 5px 0px;
+
+           }
+
+           .container_preguntas_frecuentes h1{
+
+            margin-top: 30px;
+            background-color:black;
+            
+           }
+
+           .contacto_info_final{
+            margin-bottom: 30px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+        
+        .box_contacto{
+            padding: 0px 40px 0px 40px;
+            text-align: center;
+        }
+        
+        .box_contacto h3 {
+            margin-bottom: 30px;
+        }
+        .box_contacto p {
+            padding: 0px 30px 0px 30px;
+        color: whitesmoke;
+        font-weight: 300;
+        }
+        
+        .contacto_info_final_icono{
+            margin-top: 40px;
+        }
+ 
+        
+  
+    }
+}
+
+
+
+
+
+
+
+
+
+@mixin lg() {
+    @media only screen and (min-width: 992px) and (max-width:1200px) {
+
+
+
+        .body-contacto .container-imagen-y-formulario {
+            padding-bottom: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-items: center; 
+            align-items: center; 
+           }
+
+           .body-contacto div.container-img .img-contacto{
+            width: auto;
+
+            
+           }
+
+           .body-contacto div.container-img{
+            background-color: inherit;
+            text-align: center;
+            width: auto;
+            height: auto;
+           }
+
+           .body-contacto div.container-img .img-contacto{
+            border-color: $rojo_oscuro;
+            border-radius: 70%;
+
+            width: 30vw;
+            height: 20vw;
+
+           }
+
+
+           .body-contacto .container-formulario{
+            text-align: center;
+            border: none
+           }
+
+           .section-preguntas-frecuentes{
+            background-color: black;
+
+           }
+
+           .container_preguntas_frecuentes{
+            padding: 5px 0px 5px 0px;
+
+           }
+
+           .container_preguntas_frecuentes h1{
+
+            margin-top: 30px;
+            background-color:black;
+            
+           }
+
+           .contacto_info_final{
+            margin-bottom: 30px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+        
+        .box_contacto{
+            padding: 0px 70px 0px 70px;
+            text-align: center;
+        }
+        
+        .box_contacto h3 {
+            margin-bottom: 30px;
+        }
+        .box_contacto p {
+            padding: 0px 30px 0px 30px;
+        color: whitesmoke;
+        font-weight: 300;
+        }
+        
+        .contacto_info_final_icono{
+            margin-top: 40px;
+        }
+ 
+        
+  
+    }
+}
+  
+  
+  
+
+
+@mixin xl() {
+    @media only screen and (min-width: 1200px) and (max-width:1400px) {
+
+
+
+        .body-contacto .container-imagen-y-formulario {
+            padding-bottom: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-items: center; 
+            align-items: center; 
+           }
+
+           .body-contacto div.container-img .img-contacto{
+            width: auto;
+           }
+
+
+           .body-contacto div.container-img{
+            background-color: inherit;
+            text-align: center;
+            width: auto;
+            height: auto;
+           }
+
+           .body-contacto div.container-img .img-contacto{
+            border-color: $rojo_oscuro;
+            border-radius: 70%;
+            width: 30vw;
+            height: 20vw;
+
+           }
+
+
+           .body-contacto .container-formulario{
+            text-align: center;
+            border: none;
+            
+           }
+
+           .section-preguntas-frecuentes{
+            background-color: black;
+
+           }
+
+           .container_preguntas_frecuentes{
+            padding: 5px 0px 5px 0px;
+
+           }
+
+           .container_preguntas_frecuentes h1{
+
+            margin-top: 30px;
+            background-color:black;
+            
+           }
+
+           .contacto_info_final{
+            margin-bottom: 30px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+        
+        .box_contacto{
+            padding: 0px 120px 30px 120px;
+            text-align: center;
+        }
+        
+        .box_contacto h3 {
+            margin-bottom: 30px;
+        }
+        .box_contacto p {
+            padding: 0px 10px 0px 10px;
+        color: whitesmoke;
+        font-weight: 300;
+        }
+        
+        .contacto_info_final_icono{
+            margin-top: 40px;
+        }
+
+ 
+        
+  
+    }
+}
+  
+  
+  
+
+@mixin xxl() {
+    @media only screen and (min-width: 1400px) and (max-width:1600px) {
+
+
+
+        
+        .body-contacto .container-formulario p{
+            display: none;
+        }
+
+        .container_preguntas_frecuentes h1{
+            margin-top: 30px;
+        }
+
+
+
+        .contacto_info_final{
+            margin-bottom: 30px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+        
+        .box_contacto{
+            padding: 0px 120px 30px 120px;
+            text-align: center;
+        }
+        
+        .box_contacto h3 {
+            margin-bottom: 30px;
+        }
+        .box_contacto p {
+            padding: 0px 50px 0px 50px;
+        color: whitesmoke;
+        font-weight: 300;
+        }
+        
+        .contacto_info_final_icono{
+            margin-top: 40px;
+        }
+        
+  
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  @include sm();
+  @include md();
+  @include lg();
+  @include xl();
+  @include xxl();
